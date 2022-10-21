@@ -54,7 +54,7 @@ public class Human {
     @Override
     public String toString() {
         check();
-        if (job.equals("Информация не указана") || job.equalsIgnoreCase("безработный")) {
+        if (job.equalsIgnoreCase("безработный")) {
             return smallGreeting();
         } else
             return String.format("Привет! Меня зовут %s. Я из города %s. Я родился в %d году.Я работаю на должности %s. Будем знакомы!",
